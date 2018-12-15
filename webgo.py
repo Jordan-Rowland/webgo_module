@@ -24,7 +24,11 @@ def elems_imgs(elems):
     imgs = []
     for i in elems:
         element = i['href']
-        if element.endswith('.jpg') or element.endswith('.jpeg') or element.endswith('.gif') or element.endswith('.png') or element.endswith('.webm') or element.endswith('.gifv') or element.endswith('.giphy') or element.endswith('.webp') or element.endswith('.mp4'):
+        if element.lower().endswith('.jpg') or element.lower().endswith('.jpeg')\
+          or element.lower().endswith('.gif') or element.lower().endswith('.png')\
+          or element.lower().endswith('.webm') or element.lower().endswith('.gifv')\
+          or element.lower().endswith('.giphy') or element.lower().endswith('.webp')\
+          or element.lower().endswith('.mp4') or element.lower().endswith('.mpeg'):
             imgs.append('http:' + element)
     return imgs
 
