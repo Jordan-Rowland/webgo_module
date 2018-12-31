@@ -1,3 +1,3 @@
 # webgo_module
 
-Module to speed up webscraping tasks
+Wrapper to speed up webscraping tasks
